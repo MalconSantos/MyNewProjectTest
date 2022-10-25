@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Outfit', sans-serif;
+}
+
+:root {
+    --firstColor: hsl(212, 45%, 89%);
+    --secundColor: hsl(0, 0%, 100%);
+    --tColor:  hsl(220, 15%, 55%);
+    --fColor:  hsl(218, 44%, 22%);
+}
+
+@import url('https://fonts.googleapis.com/css2? família=Outfit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+body {
+    background-color: var(--firstColor);
+    width: 100%;
+}
+
+div.container{
+    width: 25%;
+    height: 70%;
+    background-color: var(--secundColor);
+    border-radius: 15px;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    padding: 12px;
+}
+
+div > img {
+
+    width: 100%;
+    height: 65%;
+
+    border-radius: 15px;
+
+}
+div > h1{
+    padding: 0.5em;
+
+    font-size: 1.3em;
+    font-weight: bold;
+    text-align: center;
+}
+div > p{
+    font-size: 0.95em;
+    text-align: center;
+
+    padding: 0.5em;
+}
+@media screen and ( max-width:1300px) {
+    div.container{
+        width: 30%;
+        height: 80%;
+    }
+    
+}
+@media screen and ( max-width:920px) {
+    div.container{
+        width: 55%;
+        height: 80%;
+    }
+    div>h1{
+        padding: 10px;
+        font-size: 1.7em;
+    }
+    div> p{
+        font-size: 1.1em;
+    }
+    
+}
+@media screen and ( max-width:640px) {
+    div.container{
+        width: 85%;
+        height: 80%;
+    }
+    div > h1{
+        padding: 0.5em;
+    
+        font-size: 1.3em;
+        font-weight: bold;
+        text-align: center;
+    }
+    div > p{
+        font-size: 0.95em;
+        text-align: center;
+    
+        padding: 0.5em;
+    }
+    
+}
